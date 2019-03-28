@@ -1,30 +1,31 @@
 // import library
 import React, { Component } from 'react';
-import { View, Text } from 'react-native'
+import { View, Text } from 'react-native';
 
 // create component
 class Header extends Component {
     render() {
         return (
-            <View style={styles.Header}>
-                <Text style={styles.Text}>
+            <View style={styles.header}>
+                <Text style={styles.text}>
                     {this.props.title}
                 </Text>
             </View>
         );
     }
 }
+
 // style
 const styles = {
-    Header: {
-        padding: 50,
+    header: {
+        padding: 10,
         alignItems: 'center',
-        backgroundColor: '#008080'
+        backgroundColor: 'blue'
     },
-    Text: {
-        fontSize: 50,
+    text: {
+        fontSize: 25
     }
 }
 
-// export
+// export 
 export default Header;

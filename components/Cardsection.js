@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Cardsection
- extends Component {
+class CardSection extends Component {
     render() {
         return (
             <View>
-                <Text> Earth </Text>
+                {this.props.children}
             </View>
         );
     }
 }
 
-export default Cardsection;
+export default CardSection;

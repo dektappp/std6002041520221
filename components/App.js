@@ -1,21 +1,22 @@
-// import Library
+// import library
 import React from 'react';
 import { View, Text } from 'react-native';
-import Header from './Header'
+import Header from './Header';
 import Card from './Card';
- 
-// write components
+
+// write component
 class App extends React.Component {
-    render(){
+    render() {
         return (
             //component about react native
             <View>
                 <Header title="Albums" />
-                <Text>Phuwadon Sareekit</Text>
+                <Text>My Car</Text>
                 <Card />
             </View>
         );
     }
 }
-// export
+
+// export 
 export default App;
