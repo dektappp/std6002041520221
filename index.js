@@ -3,10 +3,10 @@
  */
 
 import {AppRegistry} from 'react-native';
-import {createStackNaviga}
 //import App from './App';
-import {name as appName} from './app.json';
 import App from './components/App';
-import About from './components/About';
+import {name as appName} from './app.json';
+import AsyncStorage from '@react-native-community/async-storage';
 
-AppRegistry.registerComponent(appName, () => About);
+
+AppRegistry.registerComponent(appName, () => App);
